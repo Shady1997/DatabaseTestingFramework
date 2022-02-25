@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test name="Testing main Operations on MySQL database">
+		<classes>
+			<class name="main.Base">
+				<methods>
+					<include name="checkSelectOperation" />
+					<include name="addResultsToLocalModel" />
+				</methods>
+			</class>
+			<class name="testcases.TC0_CheckInsertOperation">
+				<methods>
+					<include name="insertToDatabase" />
+				</methods>
+			</class>
+			<class name="testcases.TC1_CheckUpdateOperation">
+				<methods>
+					<include name="updateToDatabase" />
+				</methods>
+			</class>
+			<class name="testcases.TC2_CheckDeleteOperation">
+				<methods>
+					<include name="deleteFromDatabase" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite> 
