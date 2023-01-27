@@ -10,28 +10,6 @@
           <include name="updateToDatabase"/>
         </methods>
       </class> <!-- testcases.TC1_CheckUpdateOperation -->
-      <class name="testcases.TC0_CheckInsertOperation">
-        <methods>
-          <include name="terdown"/>
-          <include name="insertToDatabase"/>
-          <include name="checkConnectionToMySqlDatabase"/>
-        </methods>
-      </class> <!-- testcases.TC0_CheckInsertOperation -->
-      <class name="main.Base">
-        <methods>
-          <include name="addResultsToLocalModel"/>
-          <include name="terdown"/>
-          <include name="checkConnectionToMySqlDatabase"/>
-          <include name="checkSelectOperation"/>
-        </methods>
-      </class> <!-- main.Base -->
-      <class name="testcases.TC2_CheckDeleteOperation">
-        <methods>
-          <include name="deleteFromDatabase"/>
-          <include name="terdown"/>
-          <include name="checkConnectionToMySqlDatabase"/>
-        </methods>
-      </class> <!-- testcases.TC2_CheckDeleteOperation -->
     </classes>
   </test> <!-- Testing main Operations on MySQL database(failed) -->
 </suite> <!-- Failed suite [Suite] -->
